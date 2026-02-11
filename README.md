@@ -1,6 +1,6 @@
 📌 About The Project
 
-This portfolio was built from scratch using:
+This portfolio was built from scratch using: https://web-2026-olive.vercel.app/
 
 HTML for structure
 
