@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mithun's portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-container">
+      <div class="stars-layer">
+        <img src="stars.png" alt="star background" />
+      </div>
+
+      <div class="mountain-layer">
+        <img src="mountain1.svg" alt="mountain" />
+      </div>
+
+      <h1 class="hero-title">Hi, I’m Mithun Gullapalli</h1>
+
+      <nav class="main-nav">
+        <a href="#" data-section="intro" class="active">INTRO</a>
+        <a href="#" data-section="projects">PROJECTS</a>
+        <a href="#" data-section="experience">EXPERIENCE</a>
+        <a href="#" data-section="skills">SKILLS</a>
+      </nav>
+    </div>
+
+    <div class="content-wrapper">
+      <section id="intro" class="section intro-section">
+        <div class="intro-container">
+          <h3 class="neon-title">The Big Picture</h3>
+
+          <p class="intro-lead">
+            Computer Science student specializing in Artificial Intelligence &
+            Machine Learning, building end-to-end AI systems from data
+            collection to deployment.
+          </p>
+
+          <div class="intro-highlights">
+            <div class="highlight-item">
+              <h4>AI Systems Engineering</h4>
+              <p>
+                Designing conversational AI, model pipelines, and real-time
+                inference systems.
+              </p>
+            </div>
+
+            <div class="highlight-item">
+              <h4>Computer Vision & IoT</h4>
+              <p>
+                Building embedded AI solutions integrating sensors, vision
+                models, and alerts.
+              </p>
+            </div>
+
+            <div class="highlight-item">
+              <h4>Deployment & Optimization</h4>
+              <p>
+                Containerized APIs, model orchestration, and performance tuning
+                for real-world use.
+              </p>
+            </div>
+          </div>
+
+          <p class="intro-footer">
+            I focus on reliability, debugging thoroughly, and shipping systems
+            that actually work. Well sometimes they work. Sometimes I debug at 2
+            AM.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h4 class="neon-title">Programming</h4>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>Java</span>
+              <span>SQL</span>
+              <span>C/C++</span>
+              <span>Embedded C</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h4 class="neon-title">Machine Learning & AI</h4>
+            <div class="skill-tags">
+              <span>Ollama (LLM)</span>
+              <span>Whisper (STT)</span>
+              <span>Text-to-Speech</span>
+              <span>Feature Engineering</span>
+              <span>Model Evaluation</span>
+              <span>CNNs</span>
+              <span>Hyperparameter Tuning</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h4 class="neon-title">Backend & APIs</h4>
+            <div class="skill-tags">
+              <span>FastAPI</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>REST APIs</span>
+              <span>Service Integration</span>
+              <span>Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h4 class="neon-title">Computer Vision & IoT</h4>
+            <div class="skill-tags">
+              <span>OpenCV</span>
+              <span>DeepFace</span>
+              <span>LiDAR Processing</span>
+              <span>Arduino</span>
+              <span>ESP8266</span>
+              <span>MAX30102</span>
+              <span>MPU6050</span>
+              <span>GSM</span>
+              <span>GPS</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h4 class="neon-title">Cloud & DevOps</h4>
+            <div class="skill-tags">
+              <span>AWS EC2</span>
+              <span>AWS S3</span>
+              <span>AWS Lambda</span>
+              <span>Docker</span>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="projects-container">
+          <div class="project-card">
+            <h4 class="neon-title">
+              <a href="https://github.com/Mithun20222/Mario"
+                >Speech-Based Chatbot</a
+              >
+            </h4>
+            <p>
+              A voice-driven AI system that actually follows the correct order
+              of operations: it listens, transcribes, reasons, and then speaks.
+              Implements a real-time pipeline using
+              <strong>Whisper (speech-to-text)</strong>,
+              <strong>Ollama</strong>, and <strong>text-to-speech</strong>, all
+              coordinated by a <strong>FastAPI</strong>.
+            </p>
+            <span class="tech">
+              Python • FastAPI • Whisper • Ollama • Text-to-Speech
+            </span>
+          </div>
+          <div class="project-card">
+            <h4 class="neon-title">
+              <a href="https://github.com/Mithun20222/OmniCam"
+                >OmniCam – Face Recognition & Intruder Alert System</a
+              >
+            </h4>
+            <p>
+              A real-time computer vision system designed to recognize
+              authorized faces and remain suspicious of everyone else. Uses
+              facial embeddings with temporal consistency checks to reduce false
+              positives and sends instant alerts when an unknown person persists
+              long enough to deserve attention.
+            </p>
+            <span class="tech">
+              Python • OpenCV • DeepFace • Supabase • Telegram Bot API
+            </span>
+          </div>
+          <div class="project-card">
+            <h4 class="neon-title">
+              <a href="https://github.com/Mithun20222/OmniCam"
+                >SafeFit – Smart Health & Safety IoT Bracelet</a
+              >
+            </h4>
+            <p>
+              An offline-capable wearable system that monitors health vitals,
+              detects abnormal motion, tracks live location, and sends SOS
+              alerts. Designed with sensor-level signal processing and GSM-based
+              communication for real-world reliability.
+            </p>
+            <span class="tech">
+              Arduino • ESP8266 • Embedded C • MAX30102 • MPU6050 • GSM • GPS
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="experience-container">
+          <div class="experience-card">
+            <div class="experience-header">
+              <h4 class="job-title">Intern — Transpoze Labs</h4>
+              <span class="experience-date">May 2025 – July 2025</span>
+            </div>
+
+            <ul class="experience-points">
+              <li>
+                Built a speech-driven conversational system integrated into the
+                company’s AI platform to collect structured audio datasets.
+              </li>
+              <li>
+                Implemented real-time STT pipelines using Whisper and LLM
+                orchestration via Ollama.
+              </li>
+              <li>
+                Containerized services using Docker for deployment and
+                scalability.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-text">
+          Open to AI/ML internships, research collaborations, and backend roles.
+        </p>
+
+        <div class="footer-icons">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mithungullapalli@gmail.com"
+            target="_blank"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a href="https://github.com/Mithun20222" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mithun-gullapalli-003787290/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/11FcQafRvVyc7GlNpPpPxgnuG1JuhT-m9/view?usp=drivesdk"
+            target="_blank"
+          >
+            <i class="fa-solid fa-file"></i>
+          </a>
+        </div>
+      </div>
+      <br>
+      <p class="footer-msg">Dream BIG ^0^</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
