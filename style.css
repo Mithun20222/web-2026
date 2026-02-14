@@ -12,6 +12,61 @@ body {
   overflow-x: hidden;
   background: #4038a5;
   scroll-behavior: smooth;
+  cursor: crosshair;
+}
+
+p, li {
+  font-size: 17px;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #0f0c29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+  width: 300px;
+}
+
+.loader-title {
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #ff758c;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 117, 140, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff758c, #ffb3b3);
+  transition: width 0.2s ease;
+}
+
+.progress-text {
+  font-family: monospace;
+  color: #ffb3b3;
+  font-size: 14px;
+}
+
+.loader.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
 }
 
 .intro-container {
@@ -97,6 +152,26 @@ body {
   font-size: 14px;
   color: #ff758c;
   opacity: 0.9;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-header a {
+  color: #ff758c;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.project-header a:hover {
+  transform: scale(1.2);
+  text-shadow:
+    0 0 10px #ff758c,
+    0 0 20px #ff758c;
 }
 
 .experience-container {

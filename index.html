@@ -11,6 +11,16 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <div class="loader-content">
+        <h2 class="loader-title">Initializing System</h2>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="progress-text">0%</div>
+      </div>
+    </div>
+
     <div class="hero-container">
       <div class="stars-layer">
         <img src="stars.png" alt="star background" />
@@ -145,60 +155,70 @@
       </section>
 
       <section id="projects" class="section">
-        <div class="projects-container">
-          <div class="project-card">
-            <h4 class="neon-title">
-              <a href="https://github.com/Mithun20222/Mario"
-                >Speech-Based Chatbot</a
-              >
-            </h4>
-            <p>
-              A voice-driven AI system that actually follows the correct order
-              of operations: it listens, transcribes, reasons, and then speaks.
-              Implements a real-time pipeline using
-              <strong>Whisper (speech-to-text)</strong>,
-              <strong>Ollama</strong>, and <strong>text-to-speech</strong>, all
-              coordinated by a <strong>FastAPI</strong>.
-            </p>
-            <span class="tech">
-              Python • FastAPI • Whisper • Ollama • Text-to-Speech
-            </span>
-          </div>
-          <div class="project-card">
-            <h4 class="neon-title">
-              <a href="https://github.com/Mithun20222/OmniCam"
-                >OmniCam – Face Recognition & Intruder Alert System</a
-              >
-            </h4>
-            <p>
-              A real-time computer vision system designed to recognize
-              authorized faces and remain suspicious of everyone else. Uses
-              facial embeddings with temporal consistency checks to reduce false
-              positives and sends instant alerts when an unknown person persists
-              long enough to deserve attention.
-            </p>
-            <span class="tech">
-              Python • OpenCV • DeepFace • Supabase • Telegram Bot API
-            </span>
-          </div>
-          <div class="project-card">
-            <h4 class="neon-title">
-              <a href="https://github.com/Mithun20222/OmniCam"
-                >SafeFit – Smart Health & Safety IoT Bracelet</a
-              >
-            </h4>
-            <p>
-              An offline-capable wearable system that monitors health vitals,
-              detects abnormal motion, tracks live location, and sends SOS
-              alerts. Designed with sensor-level signal processing and GSM-based
-              communication for real-world reliability.
-            </p>
-            <span class="tech">
-              Arduino • ESP8266 • Embedded C • MAX30102 • MPU6050 • GSM • GPS
-            </span>
-          </div>
-        </div>
-      </section>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4 class="neon-title">Speech-Based Chatbot</h4>
+        <a href="https://github.com/Mithun20222/Mario" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <p>
+        A voice-driven AI system that follows a real-time pipeline:
+        speech → transcription → reasoning → response synthesis.
+        Built using Whisper, Ollama, and FastAPI.
+      </p>
+
+      <span class="tech">
+        Python • FastAPI • Whisper • Ollama • Text-to-Speech
+      </span>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4 class="neon-title">
+          OmniCam – Face Recognition & Intruder Alert
+        </h4>
+        <a href="https://github.com/Mithun20222/OmniCam" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <p>
+        Real-time facial recognition with temporal consistency checks
+        to reduce false positives and trigger alerts for unknown identities.
+      </p>
+
+      <span class="tech">
+        Python • OpenCV • DeepFace • Supabase • Telegram Bot API
+      </span>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4 class="neon-title">
+          SafeFit – Smart Health & Safety IoT Bracelet
+        </h4>
+        <a href="https://github.com/Mithun20222/safe-fit-updated" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <p>
+        Offline-capable wearable monitoring vitals, motion anomalies,
+        GPS tracking, and GSM-based SOS alerts.
+      </p>
+
+      <span class="tech">
+        Arduino • ESP8266 • Embedded C • MAX30102 • MPU6050 • GSM • GPS
+      </span>
+    </div>
+
+  </div>
+</section>
+
 
       <section id="experience" class="section">
         <div class="experience-container">
@@ -260,7 +280,7 @@
           </a>
         </div>
       </div>
-      <br>
+      <br />
       <p class="footer-msg">Dream BIG ^0^</p>
     </footer>
 
